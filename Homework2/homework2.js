@@ -1,6 +1,6 @@
-console.info('Domasna2-JavaScript');
+console.info('Homework2-JavaScript');
 console.warn('Proceed with caution!');
-console.time('Domasna2');
+console.time('Homework2');
 
 let x=2;
 let y=16;
@@ -50,10 +50,10 @@ console.dir(location);
 console.log(location);
 console.error('This is a fake error');
 setTimeout(() => {
-    console.timeEnd('Domasna2');    
+    console.timeEnd('Homework2');    
 }, 3000);
 setTimeout(() => {
-    console.clear('Domasna2');
+    console.clear('Homework2');
 }, 20000);
 
 
