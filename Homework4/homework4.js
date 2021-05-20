@@ -38,10 +38,15 @@ if (personOne.age>personTwo.age && personOne.age>personThree.age){
 
 let persons=[personOne,personTwo,personThree];
 console.log(persons);
-let sum=persons[0].age+persons[1].age+persons[2].age;
-console.log('Sum of age is',sum);
-let avg=(persons[0].age+persons[1].age+persons[2].age)/3;
-console.log('Average years',avg);
+
+let sum=0;
+persons.forEach (person =>{
+    sum+=person.age;
+});
+console.log('Sum of age =',sum);
+console.log('Average age =',sum/persons.length);
+
+
 
 
 
