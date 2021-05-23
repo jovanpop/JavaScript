@@ -31,26 +31,32 @@
         console.log('Fruit:',fruits[i]);
         console.log("i =",i);
     };
-/*     for(let ind=0; ind<students.length; ind++){
+    for(let ind=0; ind<students.length; ind++){
        console.log(ind);
        console.log(students[ind]);
-    } */
+    };
+    console.log('ALL');
     let counter=0;
     while (counter<10){
         counter++;
         console.log(counter);
-    }
+    };
+    console.log('EVEN');
     counter=0;
-    do {
-        counter+=2;
-        console.log(counter);
-    }
-    while(counter<20);
-    counter=1;
-    do{
-        counter+=2;
-        console.log(counter);
-    }while(counter<21);
+    while (counter<10){
+        counter++;
+        if (counter%2==0){
+            console.log(counter);
+        }
+    };
+    console.log('ODD');
+    counter=0;
+    while (counter<10){
+        counter++;
+        if(counter%2>0){
+            console.log(counter);
+        }
+    };
 
 
 
