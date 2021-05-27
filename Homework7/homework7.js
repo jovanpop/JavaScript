@@ -58,7 +58,7 @@ waitforresponseTwo(1700);
 waitforresponseTwo(13);
 
 const arrayOne = ['red', 'blue', 'green'];
-let upper_A0=(upper)=>{
+let upper_A0=()=>{
     if(typeof arrayOne[1]=='string'){
     arrayOne[1]=arrayOne[1].toUpperCase();
     arrayOne[0]=arrayOne[0].toUpperCase();
