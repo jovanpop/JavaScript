@@ -41,7 +41,7 @@ waitforresponse(true,3);
 let compareTwo= (d) => {
     return new Promise((resolve, reject) => {
         if (typeof d=='number' && d>25){
-            return resolve();
+            return resolve(d);
         }else{
         return reject()};
     })
@@ -49,12 +49,12 @@ let compareTwo= (d) => {
 let waitforresponseTwo=async(d)=>{
     try{
         let responseTwo=await compareTwo(d);
-        console.log('The number',d,'is bigger than 25');
+        console.log('The number',responseTwo,'is bigger than 25');
     }catch{
         console.error('ERROR');
     }
 };
-waitforresponseTwo(1700);
+waitforresponseTwo(200);
 waitforresponseTwo(13);
 
 const arrayOne = ['red', 'blue', 'green'];
