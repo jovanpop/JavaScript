@@ -16,7 +16,7 @@ let compare= (a,b) => {
     return new Promise((resolve, reject) => {
         if (typeof a=='number' && typeof b=='number' && a<b){
             return resolve(b);
-        }else{if(typeof a=='number' && typeof a=='number' && a>=b){
+        }else{if(typeof a=='number' && typeof b=='number' && a>=b){
             return resolve(a);
         }}
         return reject();
